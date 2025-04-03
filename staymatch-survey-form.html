@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+        <h1 id="title">StayMatch Survey Form</h1>
+        <p id="description">Please complete the following survey to provide details about your experience with StayMatch</p>
+
+        <form id="survey-form">
+            <fieldset>
+                <legend>Personal Details (required)</legend>
+                <label for="name" id="name-label">Full Name</label>
+                <input type="text" id="name" placeholder="Ex. Wilson Dao" required>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="name@email.com" required>
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" placeholder="age" min="1" max="100" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+
+                <p>What made you choose StayMatch?</p>
+                <select id="dropdown">
+                    <option value="" disabled selected>Choose option</option>
+                    <option value="online-advertising">Online advertising</option>
+                    <option value="word-of-mouth">Word of mouth</option>
+                    <option value="reputation">Reputation</option>
+                    <option value="attractive-devs">Attractive devs</option>
+                </select>
+
+                <p>On a scale from 1 to 5, how would you rate your experience using StayMatch?</p>
+                <input type="radio" id="rating1" value="rating1" name="rating">
+                <label for="rating1" id="radio1">1</label>
+                <input type="radio" id="rating2" value="rating2" name="rating">
+                <label for="rating2" id="radio2">2</label>
+                <input type="radio" id="rating3" value="rating3" name="rating">
+                <label for="rating3" id="radio3">3</label>
+                <input type="radio" id="rating4" value="rating4" name="rating">
+                <label for="rating4" id="radio4">4</label>
+                <input type="radio" id="rating5" value="rating5" name="rating" checked>
+                <label for="rating5" id="radio5">5</label>
+
+                <p>What did you like about the System? (check all that apply)</p>
+                <input type="checkbox" value="fast-loading-speed">
+                <label>Fast loading speed</label>
+                <input type="checkbox" value="wide-range-of-hotels">
+                <label>Wide range of hotels</label>
+                <input type="checkbox" value="easy-to-use">
+                <label>Easy to use</label>
+                <input type="checkbox" value="aesthetic-user-interface">
+                <label>Aesthetic user interface</label>
+                <input type="checkbox" value="good-quality-recommendations">
+                <label>Good quality recommendations</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Any additional comments?</legend>
+                <textarea>Enter your comments here</textarea>
+            </fieldset>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+</html>
