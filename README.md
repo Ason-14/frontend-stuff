@@ -1,1 +1,1 @@
-Bunch of small html files for practice and maybe later use in projects
+Bunch of small html,css files for practice and maybe later use in projects
