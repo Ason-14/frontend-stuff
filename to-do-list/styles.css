@@ -1,0 +1,21 @@
+body {
+    background-color:darkcyan;
+}
+
+.card {
+    background-color:aliceblue;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.list > li {
+    list-style-type: none;
+    background-color:antiquewhite;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.sub-item > li {
+    margin: 50px;
+    padding: 50px;
+}
