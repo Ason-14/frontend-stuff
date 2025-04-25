@@ -1,21 +1,71 @@
 body {
     background-color:darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card {
     background-color:aliceblue;
-    margin: 10px;
-    padding: 10px 20px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.list > li {
+.todo-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-list > li {
     list-style-type: none;
     background-color:antiquewhite;
-    margin: 10px 0;
+    margin: 10px auto;
     padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    box-sizing: border-box;
 }
 
 .sub-item > li {
-    margin: 50px;
-    padding: 50px;
+    /* margin: 10px; */
+    padding-top: 10px;
+}
+
+#heading {
+    color:midnightblue;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color:crimson;
+}
+
+a:visited {
+    color: coral;
+}
+
+a:hover {
+    color: indianred;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: darksalmon;
+    border: 1px;
+    border-color: darksalmon;
+}
+
+a:active {
+    color: darkred;
 }
